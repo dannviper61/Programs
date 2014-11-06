@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class examen{
+public static void main(String[]args){
+Scanner entrada=new Scanner(System.in);
+int ciclo,suma=0,prom,mayor=0,menor=1000,aux=0,factor=1,n1,suma2=1;
+System.out.println("\n Programa realizado por DannViper61");
+
+System.out.println("\n ¿Cuántos valores vas a comparar?:");
+System.out.println("\n");
+n1=entrada.nextInt();
+for(ciclo=1;ciclo<=n1;ciclo++){
+System.out.println("\n Valor "+ciclo+":");
+aux=entrada.nextInt();
+if(aux!=mayor && aux!=menor){
+if(aux>mayor){ mayor=aux;}
+if(aux<menor){ menor=aux;}
+suma=suma+aux;
+} else{System.out.println("\n Valor repetido insterta otro");ciclo--;}}
+prom=suma/n1;
+System.out.println("\n El valor mayor es:"+mayor);
+System.out.println("\n El valor menor es:"+menor);
+System.out.println("\n El promedio es:"+prom);
+
+for(ciclo=2;ciclo<=prom;ciclo++){
+    factor=factor*ciclo;
+    suma2=suma2+ciclo;
+    
+        
+    }
+    System.out.print("\n El factorial es:"+factor);
+    System.out.println("\n");
+     System.out.print("\n La suma es: "+suma2); 
+     System.out.println("\n");
+     System.out.println("\n Para más cosas visita \n www.mundodelsoftwareweb.wordpress.com");
+     System.out.println("\n No te olvides de unir a nuestra red social \n http://unitsocial.hol.es ");
+
+}
+}
