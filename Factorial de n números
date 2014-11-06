@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class examen{
+class factorial{
 public static void main(String[]args){
 Scanner entrada=new Scanner(System.in);
 int ciclo,suma=0,prom,mayor=0,menor=1000,aux=0,factor=1,n1,suma2=1;
