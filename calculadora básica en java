@@ -1,0 +1,79 @@
+import java.util.Scanner;
+class calculator {
+    public static void main(String[]args){
+        Scanner ir = new Scanner(System.in);
+        int op1= 0;
+        int m2= 0;
+        int m3= 0;        
+        double num1= 0;
+        double num2= 0;
+        System.out.println("\n Elige la operación que deseas realizar:");
+        System.out.println("\n 1.- Suma: ");
+        System.out.println("\n 2.- Resta: ");
+        System.out.println("\n 3.- Multiplicación: ");
+        System.out.println("\n 4.- División: ");
+        System.out.println("\n 5.- Salir: ");
+        System.out.println("\n 6.- Publicidad: ");
+        
+        char opcion=ir.next().charAt(0);
+        switch(opcion)
+        {
+            case '1':
+                System.out.println("\n Suma");
+                System.out.println("\n Ingresa el primer número");
+                num1 = ir.nextDouble();
+                System.out.println("\n Ingresa el segundo número");
+                num2 = ir.nextDouble();
+                System.out.println("\n El resultado es : \n"+(num1+num2));
+                System.out.println("\n");
+                break;
+                case '2':
+                System.out.println("\n Resta");
+                System.out.println("\n Ingresa el primer número");
+                num1 = ir.nextDouble();
+                System.out.println("\n Ingresa el segundo número");
+                num2 = ir.nextDouble();
+                System.out.println("\n El resultado es : \n"+(num1-num2));
+                System.out.println("\n");    
+                break;
+                    case '3':
+                System.out.println("\n Multiplicación");
+                System.out.println("\n Ingresa el primer número");
+                num1 = ir.nextDouble();
+                System.out.println("\n Ingresa el segundo número");
+                num2 = ir.nextDouble();
+                System.out.println("\n El resultado es : \n"+(num1*num2));
+                System.out.println("\n");        
+                break;
+                        case '4':
+                            System.out.println("\n División");
+                System.out.println("\n Ingresa el primer número");
+                num1 = ir.nextDouble();
+                System.out.println("\n Ingresa el segundo número");
+                num2 = ir.nextDouble();
+                if(num2 > 0)
+                {
+                System.out.println("\n El resultado es : \n"+(num1/num2));
+                }else
+                {
+                    System.out.println("\n No se puede dividir entre cero wey");
+                }
+                System.out.println("\n");
+                break;
+                case '5':
+                    System.out.println("\n Fin de la aplicación \n");
+                break;
+                default:
+                    System.out.println("\n Lee bien el menú no seas wey  jajaja xD xD xD xD  I am a master troll xD \n ");
+                    case '6':
+                        System.out.println("\n Unete a nuestra red social \n http://unitsocial.hol.es \n");
+                        break;
+                        
+                 
+                    
+               
+        }
+        
+    }
+    
+}
