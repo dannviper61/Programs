@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class ventasp{
+    public static void main(String args[]){
+        Scanner guardar=new Scanner(System.in);
+        int op,producto=0, cantidad=0, codigo=0,precio=0, total=0,descuento=0,totalp=0,totalp2;
+        String nombre;
+        System.out.println("\n Programa de ventas para super mercados \n");
+        System.out.println("\n Programa realizado por Dannviper61\n");
+        System.out.println("\n Ingresa el nombre del producto:");
+        nombre = guardar.nextLine();
+        System.out.println("\n Ingresa la cantidad de productos:");
+        cantidad = guardar.nextInt();
+        System.out.println("\n Ingresa el código del producto:");
+        codigo = guardar.nextInt();
+        System.out.println("\n Ingresa el precio del Producto:");
+        precio = guardar.nextInt();        
+        total=cantidad*precio;
+        descuento=total/10;
+        totalp=total-descuento;
+        totalp2=totalp;
+        System.out.println("\n Total: \n"+total);
+        System.out.println("\n El producto adquirido es: \n "+nombre);
+        System.out.println("\n Descuento total:\n"+descuento);
+        System.out.println("\n Total a pagar\n"+totalp2);
+        
+    }
+}
